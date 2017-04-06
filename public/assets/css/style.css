@@ -1,0 +1,14 @@
+.top-25
+{
+    margin-top: 25px;
+}
+#logwindow
+{
+    border: 1px solid grey;
+    height: 250px;
+    overflow-y: auto;
+    background-color: black;
+    color: aliceblue;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+        
+}

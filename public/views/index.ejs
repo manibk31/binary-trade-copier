@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<%- include ./templates/head.ejs %>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Binary Cloud Copier</a>
+   
+      </div>
+      <div>
+       <a style ="margin-top:15px; margin-right:10px "class="pull-right" href="/logout"> Logout</a>
+      </div>
+     
+  </div>
+</nav>
+    <div id="wrapper" class="container">
+    <form class="form-inline col-md-offset-2 col-md-8" method="post" action="/interact">
+  <div class="form-group col-md-6">
+    <label for="master">Master Token</label>
+    <input type="text" id="master" name="master" class="form-control"  value="<%=master%>" required>
+  
+  </div>
+        <div class="form-group col-md-6">
+    <label for="slave">Slave Token</label>
+    <input type="text" id="slave" name="slave" class="form-control" value="<%=slave%>" required>
+    
+  </div>
+       
+        <div class="form-group col-md-2" style="padding-top:25px;">
+   
+    <input type="submit" name="submit" value="start" class="form-control" >
+    
+  </div>
+        <div class="form-group col-md-2" style="padding-top:25px;">
+   
+    <input type="submit" name="submit" value="stop" class="form-control" >
+    
+  </div>
+</form>
+<div class="col-md-offset-2 col-md-8 top-25">
+<div  class="col-md-12">
+    <div id="logwindow">
+       
+        <div class="col-md-12" style="margin-top:5px; margin-bottom:5px">
+            
+        <div id="events">
+        <h4>Events:</h4> 
+        </div>
+            
+        </div>
+        
+    </div>
+</div>
+</div>
+
+</div>
+   <%- include ./templates/scripts.ejs %> 
+</body>
+</html>

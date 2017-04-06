@@ -1,0 +1,1 @@
+Have igonored node_modules, npm install for dependecies

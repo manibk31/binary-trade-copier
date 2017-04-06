@@ -1,0 +1,19 @@
+branch-defaults:
+  default:
+    environment: null
+  master:
+    environment: node-express-env
+    group_suffix: null
+global:
+  application_name: binarycopier
+  branch: null
+  default_ec2_keyname: null
+  default_platform: Node.js
+  default_region: us-west-2
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application

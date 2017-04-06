@@ -1,0 +1,31 @@
+{
+  "name": "binarycopier",
+  "version": "1.0.0",
+  "description": "A web based binary options trade copier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "binary-live-api": "^28.1.0",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.1",
+    "gulp": "^3.9.1",
+    "main-bower-files": "^2.13.1",
+    "mongoose": "^4.9.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "socket.io": "^1.7.3",
+    "string": "^3.3.3",
+    "winston": "^2.3.1",
+    "ws": "^2.1.0"
+  }
+}
