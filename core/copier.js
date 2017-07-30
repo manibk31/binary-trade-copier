@@ -84,7 +84,6 @@ api.events.on('transaction', function(data) {
             console.log("Detected buy in the master...");
             var longcode=data.transaction.longcode;
             var action=putOrCall(longcode);
-            var action = putOrCall(longcode);
             var amount_val=Math.abs(data.transaction.amount);
             var symbol=data.transaction.symbol;
              console.log("Authorizing slave...");
